@@ -8,18 +8,18 @@ A [Homebrew](https://brew.sh) tap for **[Kwire](https://github.com/tanghong123/k
 brew tap tanghong123/kwire
 ```
 
-### Terminal UI + CLI — `kwire`
+### Desktop app — Kwire.app
 
 ```sh
 brew install kwire
 ```
 
-Run `kwire` for the terminal UI, or use the CLI: `kwire search "the hobbit"` / `kwire get "the hobbit, tolkien"`.
+Installs **Kwire.app** (the cask) — a notarized, stapled universal build. (`brew install --cask kwire` also works.)
 
-### Desktop app — Kwire.app
+### Terminal UI + CLI — the `kwire` command
 
 ```sh
-brew install --cask kwire
+brew install kwire-cli
 ```
 
-The desktop `.dmg` is a notarized, stapled universal build.
+Puts the `kwire` command on your PATH: run `kwire` for the terminal UI, or `kwire search "the hobbit"` / `kwire get "the hobbit, tolkien"`.

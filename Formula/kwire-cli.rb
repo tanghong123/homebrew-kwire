@@ -1,4 +1,4 @@
-class Kwire < Formula
+class KwireCli < Formula
   desc "Terminal UI and CLI for downloading reading lists from Library Genesis"
   homepage "https://github.com/tanghong123/kwire"
   url "https://github.com/tanghong123/kwire/archive/refs/tags/v1.2.0.tar.gz"

@@ -8,6 +8,8 @@ cask "kwire" do
   desc "Desktop app for downloading reading lists from Library Genesis"
   homepage "https://github.com/tanghong123/kwire"
 
+  depends_on macos: ">= :big_sur"
+
   app "Kwire.app"
 
   zap trash: [

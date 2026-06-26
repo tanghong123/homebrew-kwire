@@ -9,8 +9,7 @@ class Kwire < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "build", "--release", "--bin", "kwire"
-    bin.install "target/release/kwire"
+    system "cargo", "install", *std_cargo_args(path: "crates/tui")
   end
 
   test do

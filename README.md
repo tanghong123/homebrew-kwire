@@ -1,25 +1,21 @@
-# homebrew-kwire
+# homebrew-kwire — deprecated
 
-A [Homebrew](https://brew.sh) tap for **[Kwire](https://github.com/tanghong123/kwire)** — gather a scattered reading list into one tidy collection, downloaded from Library Genesis.
+> [!IMPORTANT]
+> **Kwire's Homebrew distribution has moved to the shared tap
+> [`tanghong123/homebrew-tap`](https://github.com/tanghong123/homebrew-tap).**
+> This per-project tap is frozen at v2.0.0 and no longer updated.
 
-## Install
-
-```sh
-brew tap tanghong123/kwire
-```
-
-### Desktop app — Kwire.app
+## Install (new home)
 
 ```sh
-brew install kwire
+brew install tanghong123/tap/kwire        # desktop app (Kwire.app)
+brew install tanghong123/tap/kwire-cli    # terminal UI / CLI (kwire)
 ```
 
-Installs **Kwire.app** (the cask) — a notarized, stapled universal build. (`brew install --cask kwire` also works.)
-
-### Terminal UI + CLI — the `kwire` command
+If you previously tapped this repo, switch over:
 
 ```sh
-brew install kwire-cli
+brew uninstall --cask kwire; brew uninstall kwire-cli   # remove the old ones
+brew untap tanghong123/kwire                            # drop this tap
+brew install tanghong123/tap/kwire tanghong123/tap/kwire-cli
 ```
-
-Puts the `kwire` command on your PATH: run `kwire` for the terminal UI, or `kwire search "the hobbit"` / `kwire get "the hobbit, tolkien"`.

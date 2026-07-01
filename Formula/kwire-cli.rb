@@ -6,6 +6,10 @@ class KwireCli < Formula
   license "MIT"
   head "https://github.com/tanghong123/kwire.git", branch: "main"
 
+  # Kwire's Homebrew distribution moved to the shared tap tanghong123/homebrew-tap.
+  # Install the up-to-date TUI with:  brew install tanghong123/tap/kwire-cli
+  deprecate! date: "2026-07-01", because: "moved to the tanghong123/tap tap; install tanghong123/tap/kwire-cli"
+
   depends_on "rust" => :build
 
   def install
